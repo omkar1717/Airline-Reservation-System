@@ -131,7 +131,7 @@ if (!$result) {
         <?php } ?>
         
         <a href="search-flight.html" class="home-btn">Search Again</a>
-        <a href="home.html" class="home-btn">Home</a>
+        <a href="index.html" class="home-btn">Home</a>
     </div>
 </body>
 </html>
