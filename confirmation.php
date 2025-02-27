@@ -90,7 +90,7 @@ pg_close($conn);
         <p><strong>Flight:</strong> <?php echo htmlspecialchars($ticket['flight']); ?></p>
         <p><strong>Passengers:</strong> <?php echo htmlspecialchars($ticket['passengers']); ?></p>
         <p><strong>Booking Time:</strong> <?php echo htmlspecialchars($ticket['booking_time']); ?></p>
-        <a href="home.html" class="home-btn">Home</a>
+        <a href="index.html" class="home-btn">Home</a>
     </div>
 </body>
 </html>
