@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('tk.jpg') no-repeat center center/cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            width: 500px;
+        }
+        h3 {
+            margin-bottom: 25px;
+            color: #f8b400;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        input, select {
+            padding: 12px;
+            width: 90%;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            text-align: center;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            background: #f8b400;
+            border: none;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(248, 180, 0, 0.7);
+        }
+        .btn:hover {
+            background: #d18b00;
+            box-shadow: 0 0 15px rgba(248, 180, 0, 1);
+        }
+        .home-btn {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #f8b400;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(248, 180, 0, 0.7);
+        }
+        .home-btn:hover {
+            background: #d18b00;
+            box-shadow: 0 0 15px rgba(248, 180, 0, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Book a Ticket</h3>
+        <form action="book-tickets.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="flight">Select Flight:</label>
+            <select id="flight" name="flight" required>
+                <option value="flight1">Flight 1</option>
+                <option value="flight2">Flight 2</option>
+                <option value="flight3">Flight 3</option>
+            </select>
+
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" required>
+
+            <button type="submit" class="btn">Book Ticket</button>
+            <a href="home.html" class="home-btn">Home</a>
+        </form>
+    </div>
+</body>
+</html>

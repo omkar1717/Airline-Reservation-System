@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reservation System</title>
+    
+    <style>
+        body {
+            background: url('bg.jpg') no-repeat center center/cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.85);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f8b400;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s, font-weight 0.3s;
+            padding: 10px 15px;
+        }
+        nav ul li a:hover {
+            color: #f8b400;
+            font-weight: bold;
+        }
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding: 20px 80px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Airline Reservation System</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="search-flight.html">Search Flights</a></li>
+                <li><a href="book-tickets.html">Book Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome To <br> Airline Reservation <br> System</h1>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Airline Reservation System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
